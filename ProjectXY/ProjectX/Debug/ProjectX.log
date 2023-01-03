@@ -1,3 +1,0 @@
-﻿  main.cpp
-main.obj : error LNK2019: Nerozpoznaný externí symbol "class std::basic_istream<char,struct std::char_traits<char> > & __cdecl operator>>(class std::basic_istream<char,struct std::char_traits<char> > &,class Car &)" (??5@YAAAV?$basic_istream@DU?$char_traits@D@std@@@std@@AAV01@AAVCar@@@Z) odkazovaný ve funkci "void __cdecl processChoice(class CarDatabase &)" (?processChoice@@YAXAAVCarDatabase@@@Z)
-C:\Users\andri\source\repos\ProjectX\Debug\ProjectX.exe : fatal error LNK1120: Počet nerozpoznaných externích typů: 1
