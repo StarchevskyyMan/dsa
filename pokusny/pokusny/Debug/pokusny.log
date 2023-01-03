@@ -1,0 +1,32 @@
+﻿  nParagon.cpp
+  pokusny.cpp
+C:\Users\andri\source\repos\pokusny\pokusny\pokusny.cpp(88,47): warning C4305: return: zkrácení z: double na: float
+C:\Users\andri\source\repos\pokusny\pokusny\pokusny.cpp(89,43): warning C4305: return: zkrácení z: double na: float
+C:\Users\andri\source\repos\pokusny\pokusny\pokusny.cpp(90,46): warning C4305: return: zkrácení z: double na: float
+C:\Users\andri\source\repos\pokusny\pokusny\pokusny.cpp(92,44): warning C4305: return: zkrácení z: double na: float
+C:\Users\andri\source\repos\pokusny\pokusny\pokusny.cpp(93,46): warning C4305: return: zkrácení z: double na: float
+C:\Users\andri\source\repos\pokusny\pokusny\pokusny.cpp(94,45): warning C4305: return: zkrácení z: double na: float
+C:\Users\andri\source\repos\pokusny\pokusny\pokusny.cpp(96,46): warning C4305: return: zkrácení z: double na: float
+C:\Users\andri\source\repos\pokusny\pokusny\pokusny.cpp(99,46): warning C4305: return: zkrácení z: double na: float
+C:\Users\andri\source\repos\pokusny\pokusny\pokusny.cpp(100,47): warning C4305: return: zkrácení z: double na: float
+C:\Users\andri\source\repos\pokusny\pokusny\pokusny.cpp(101,46): warning C4305: return: zkrácení z: double na: float
+C:\Users\andri\source\repos\pokusny\pokusny\pokusny.cpp(102,44): warning C4305: return: zkrácení z: double na: float
+C:\Users\andri\source\repos\pokusny\pokusny\pokusny.cpp(149,41): warning C4305: argument: zkrácení z: double na: float
+C:\Users\andri\source\repos\pokusny\pokusny\pokusny.cpp(150,41): warning C4305: argument: zkrácení z: double na: float
+C:\Users\andri\source\repos\pokusny\pokusny\pokusny.cpp(151,37): warning C4305: argument: zkrácení z: double na: float
+C:\Users\andri\source\repos\pokusny\pokusny\pokusny.cpp(152,40): warning C4305: argument: zkrácení z: double na: float
+C:\Users\andri\source\repos\pokusny\pokusny\pokusny.cpp(155,35): warning C4305: argument: zkrácení z: double na: float
+C:\Users\andri\source\repos\pokusny\pokusny\pokusny.cpp(156,37): warning C4305: argument: zkrácení z: double na: float
+C:\Users\andri\source\repos\pokusny\pokusny\pokusny.cpp(158,38): warning C4305: argument: zkrácení z: double na: float
+C:\Users\andri\source\repos\pokusny\pokusny\pokusny.cpp(161,37): warning C4305: argument: zkrácení z: double na: float
+C:\Users\andri\source\repos\pokusny\pokusny\pokusny.cpp(167,37): warning C4305: argument: zkrácení z: double na: float
+C:\Users\andri\source\repos\pokusny\pokusny\pokusny.cpp(168,38): warning C4305: argument: zkrácení z: double na: float
+C:\Users\andri\source\repos\pokusny\pokusny\pokusny.cpp(169,38): warning C4305: argument: zkrácení z: double na: float
+C:\Users\andri\source\repos\pokusny\pokusny\pokusny.cpp(170,37): warning C4305: argument: zkrácení z: double na: float
+C:\Users\andri\source\repos\pokusny\pokusny\pokusny.cpp(191,32): warning C4305: argument: zkrácení z: double na: float
+C:\Users\andri\source\repos\pokusny\pokusny\pokusny.cpp(192,32): warning C4305: argument: zkrácení z: double na: float
+C:\Users\andri\source\repos\pokusny\pokusny\pokusny.cpp(194,32): warning C4305: argument: zkrácení z: double na: float
+  Generování kódu...
+C:\Users\andri\source\repos\pokusny\pokusny\pokusny.cpp(103): warning C4715: getPrice: ne všechny cesty k ovládacím prvkům vrací hodnotu
+C:\Users\andri\source\repos\pokusny\pokusny\pokusny.cpp(80): warning C4715: getIndex: ne všechny cesty k ovládacím prvkům vrací hodnotu
+  pokusny.vcxproj -> C:\Users\andri\source\repos\pokusny\Debug\pokusny.exe
