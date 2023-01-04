@@ -44,9 +44,4 @@
       <Filter>Soubory zdrojů</Filter>
     </ResourceCompile>
   </ItemGroup>
-  <ItemGroup>
-    <Xsd Include="XMLSchema.xsd">
-      <Filter>Hlavičkové soubory</Filter>
-    </Xsd>
-  </ItemGroup>
 </Project>

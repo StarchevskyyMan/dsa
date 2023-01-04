@@ -24,23 +24,28 @@ void Car::setCar(const string& newCarModel, const string& newCarBrand, const str
 }
 
 void Car::addNewCar(istream& ins) {
-	cout << "vytváøíte novı automobil \n";
-	cout << "==================================================";
-	cout << " zadejte název vırobce: ";
+	cout << "vytvarite novy automobil \n";
+	cout << "==================================================" <<endl ;
+	cout << " zadejte nazev vyrobce: " ;
 	getline(ins, brand);
-	cout << "==================================================";
+	cout << "==================================================" << endl;
 	cout << " zadejte model automobilu: ";
 	getline(ins, model);
-	cout << "==================================================";
-	cout << " zadejte rok uvedení do provozu: ";
-	ins >> year;
-	cout << "==================================================";
+	cout << "==================================================" << endl;
+	cout << " zadejte SPZ automobilu: ";
+	getline(ins, spz);
+	cout << "==================================================" << endl;
 	cout << " zadejte barvu automobilu ";
 	getline(ins, color);
-	cout << "==================================================";
-	cout << " zadejte rodne cisislo ridice  bez lomitka: ";
+	cout << "==================================================" << endl;
+	cout << " zadejte rok uvedeni do provozu: ";
+	ins >> year;
+	cout << "==================================================" << endl;
+	cout << " zadejte rodne cislo ridice  bez lomitka: ";
 	ins >> majitel;
-	cout << "==================================================";
+	cout << "==================================================" << endl;
+
+
 	//cout << " zadejte název vırobce: ";
 	//getline(ins, palivo);
 	//cout << "==================================================";
@@ -120,9 +125,14 @@ void	Car::printCarToFile(ofstream& out) {
 Car::~Car() {
 
 }
-/*
-istream& opeartor >> (istream& ins, Car& tempCar) {
-	tempCar >> addNnewCar(ins);
+
+
+
+istream& operator >> (istream& ins, Car& tempCar)
+{
+	tempCar.addNewCar(ins);
 	return ins;
 }
-*/
+
+
+

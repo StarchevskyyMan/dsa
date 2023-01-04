@@ -10,7 +10,7 @@ using namespace std;
 
 const char AUTA_DATA[] = "auta_data.txt";
 
-void createBookList(ifstream& infile, CarDatabase& Database)
+void createCarList(ifstream& infile, CarDatabase& Database)
 {
 
 
@@ -58,7 +58,7 @@ void readCarData(CarDatabase& Database)
 		exit(1);
 	}
 
-	createBookList(infile, Database);
+	createCarList(infile, Database);
 
 	infile.close();
 }

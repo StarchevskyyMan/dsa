@@ -3,18 +3,18 @@
 CarDatabase::CarDatabase()
 {
 	used = 0;
-	capacity = 5;
+	capacity = 150;
 	carPtr = new Car[capacity];
 }
 
-void CarDatabase::addCar(const Car& newCar)
+void CarDatabase::addCar(const Car& addNewCar)
 {
 	if (used >= capacity)
 	{
 		cout << "Database is full, Doubling Size. . ." << endl;
 		make_bigger();
 	}
-	carPtr[used] = newCar;
+	carPtr[used] = addNewCar;
 	used++;
 }
 void CarDatabase::printall() const
@@ -133,7 +133,8 @@ void CarDatabase::saveToFile(ofstream& out)
 void CarDatabase::make_bigger()
 {
 	Car* temp;
-	temp = new Car[capacity * 2];
+	int xy = capacity * 2;
+	temp = new Car[capacity*2];
 	for (int i = 0; i < used; i++)
 		temp[i] = carPtr[i];
 	delete[] carPtr;

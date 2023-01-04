@@ -17,8 +17,7 @@ class Car
 public:
 	Car();
 	void setCar(const string& newCarModel, const string& newCarBrand, const string newCarSpz, const string newCarColor, const int newCarYear, const int newCarOwner);
-	//void	setCar( const string& newCarModel, const string& newCarBrand, const string& newCarSpz, const string& newCarColor, const int newCarYear,
-	//const string& newCarFuel, const int newCarOwner);
+	
 	void	addNewCar(istream& ins);
 	string	getModel() const;
 	string	getBrand() const;

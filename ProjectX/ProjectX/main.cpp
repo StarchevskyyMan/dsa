@@ -1,6 +1,8 @@
+
 #include <iostream>
 #include "CarDatabase.h"
 #include "Vstup.h"
+#include "car.h"
 
 void displayMenu();
 void processChoice(CarDatabase& database);
@@ -9,7 +11,7 @@ int main() {
 
 	CarDatabase Database;
 
-	readCarData(Database);
+	//readCarData(Database);
 	displayMenu();
 	processChoice(Database);
 
@@ -90,3 +92,4 @@ void processChoice(CarDatabase& database)
 	}
 
 }
+
