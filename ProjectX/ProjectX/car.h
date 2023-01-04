@@ -35,6 +35,7 @@ public:
 	//void	setFuel(const string& newCarFuel );
 	void	printCar() const;
 	void	printCarToFile(ofstream& out);
+	//destruktor
 	~Car();
 
 private: 

@@ -22,7 +22,7 @@ void Car::setCar(const string& newCarModel, const string& newCarBrand, const str
 	//palivo	= newCarFuel;
 	majitel = newCarOwner;
 }
-
+//vytvoreni noveho automobilu
 void Car::addNewCar(istream& ins) {
 	cout << "vytvarite novy automobil \n";
 	cout << "==================================================" <<endl ;
@@ -46,9 +46,6 @@ void Car::addNewCar(istream& ins) {
 	cout << "==================================================" << endl;
 
 
-	//cout << " zadejte název výrobce: ";
-	//getline(ins, palivo);
-	//cout << "==================================================";
 
 
 }
@@ -105,14 +102,15 @@ void	setFuel(const string& newCarFuel);
 
 
 void	Car::printCar() const{
-	cout << " Znaèka: " << brand  << endl;
+	cout << " Znacka: " << brand  << endl;
 	cout << " Model:  " << model  << endl;
 	cout << " SPZ:    " << spz    << endl;
 	cout << " Barva:  " << color  << endl;
 	cout << " Rok:    " << year   << endl;
 	cout << " Majitel:" << majitel<< endl;
 
-} 
+}
+//zapise udaje do souboru
 
 void	Car::printCarToFile(ofstream& out) {
 	out << brand << " " << model << endl;
@@ -126,7 +124,7 @@ Car::~Car() {
 
 }
 
-
+//vytvori z docasneho souboru novy objekt auto
 
 istream& operator >> (istream& ins, Car& tempCar)
 {

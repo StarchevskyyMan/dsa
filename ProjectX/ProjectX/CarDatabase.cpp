@@ -11,7 +11,7 @@ void CarDatabase::addCar(const Car& addNewCar)
 {
 	if (used >= capacity)
 	{
-		cout << "Database is full, Doubling Size. . ." << endl;
+		cout << "Databaze je plna, probehne zdvojnasobeni velikosti" << endl;
 		make_bigger();
 	}
 	carPtr[used] = addNewCar;
@@ -30,7 +30,7 @@ void CarDatabase::editCarAt(int index)
 	cout << " 1. Barva" << endl;
 	cout << " 2. Majitel" << endl;
 	cout << " 3. SPZ" << endl;
-	cout << " 4. Odstranit záznam" << endl;
+	//cout << " 4. Odstranit záznam" << endl;
 	cout << " 5. Zpatky do menu." << endl;
 	//cout << " 5. Znaèka" << endl;
 	//cout << " 6. Model" << endl;
@@ -70,14 +70,14 @@ void CarDatabase::editCarAt(int index)
 			carPtr[index].setSpz(stringEdit);
 
 			break;
-			//nefunguje
-		case 4:
-			cout << "odstranit zaznam" << endl;
-			cin.ignore(1, ' ');
-			getline(cin, stringEdit);
+			
+		// case 4:
+		//	cout << "odstranit zaznam" << endl;
+			// cin.ignore(1, ' ');
+			// getline(cin, stringEdit);
 			// carPtr[index].funkce delete(stringEdit);
 
-			break;
+			// break;
 
 		default:
 			cout << "Neplatna volba:" << endl;
@@ -111,14 +111,17 @@ Car CarDatabase::getCar(int index) const
 void CarDatabase::printCarInfo() const
 {
 	for (int i = 0; i < used; i++)
-		cout << i + 1 << ". " << carPtr[i].getSpz() << endl;
+		cout << i + 1 << ". " << carPtr[i].getSpz() << endl << "  " << carPtr[i].getBrand() << endl
+		<< "  " << carPtr[i].getModel() << endl << "  " << carPtr[i].getColor() << endl
+		<< "  " << carPtr[i].getSpz() << endl << "  " << carPtr[i].getOwner() << endl << "==========" << endl;
+		
 		//zbyle udaje o autu
 }
 
 void CarDatabase::saveToFile(ofstream& out)
 {
 	if (used == 0)
-		cerr << "Zde neni nic noveho k ulozeni" << endl;
+		cerr << "Zde neni nic  k ulozeni" << endl;
 	else
 	{
 		for (int i = 0; i < used; i++)

@@ -13,6 +13,7 @@ int main() {
 
 	//readCarData(Database);
 	displayMenu();
+	
 	processChoice(Database);
 
 	cout << endl;
@@ -44,7 +45,7 @@ void processChoice(CarDatabase& database)
 	ofstream out;
 	out.open("student_test.txt");
 
-	cout << "\nEnter your choice: ";
+	cout << "\nZvolte si: ";
 	cin >> choice;
 	cout << endl;
 
