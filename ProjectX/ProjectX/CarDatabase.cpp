@@ -1,12 +1,13 @@
 #include "CarDatabase.h"
-
+#include <list>
+//konstruktor vytvoreni databaze
 CarDatabase::CarDatabase()
 {
 	used = 0;
 	capacity = 150;
 	carPtr = new Car[capacity];
 }
-
+//funkce prida objekt Car na pozici Used a následnì zvýší její hodnotu promìnné used o 1.
 void CarDatabase::addCar(const Car& addNewCar)
 {
 	if (used >= capacity)
@@ -17,12 +18,14 @@ void CarDatabase::addCar(const Car& addNewCar)
 	carPtr[used] = addNewCar;
 	used++;
 }
+//projde cely pole a nacte z nej vsechna data
 void CarDatabase::printall() const
 {
 	for (int i = 0; i < used; i++)
 		carPtr[i].printCar();
 }
 
+//funkce upravi info o konkretnim autu
 void CarDatabase::editCarAt(int index)
 {
 
@@ -49,6 +52,7 @@ void CarDatabase::editCarAt(int index)
 		{
 		case 1:
 			cout << "Zadejte novou barvu vozu" << endl;
+			// ignoruje 1 mezeru
 			cin.ignore(1, ' ');
 			getline(cin, stringEdit);
 			carPtr[index].setColor(stringEdit);
@@ -103,11 +107,14 @@ void CarDatabase::editCarAt(int index)
 
 }
 
+//vytahne objekt ulozeny na konkretni pozici v poli
+
 Car CarDatabase::getCar(int index) const
 {
 	return carPtr[index];
 }
 
+//tato metoda vypise udaje o zvolenem objektu
 void CarDatabase::printCarInfo() const
 {
 	for (int i = 0; i < used; i++)
@@ -118,6 +125,7 @@ void CarDatabase::printCarInfo() const
 		
 }
 
+// data z konkretniho indexu pole zapise do souboru
 void CarDatabase::saveToFile(ofstream& out)
 {
 	if (used == 0)
@@ -132,6 +140,7 @@ void CarDatabase::saveToFile(ofstream& out)
 	}
 
 }
+//zdvojnasobi velikost pole. nefunguje 
 
 void CarDatabase::make_bigger()
 {
@@ -139,12 +148,12 @@ void CarDatabase::make_bigger()
 	int xy = capacity * 2;
 	temp = new Car[capacity*2];
 	for (int i = 0; i < used; i++)
-		temp[i] = carPtr[i];
+		temp[i] = carPtr[i+1];
 	delete[] carPtr;
 	carPtr = temp;
 	capacity *= 2;
 }
-
+//destruktor
 CarDatabase::~CarDatabase()
 {
 

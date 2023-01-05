@@ -49,6 +49,7 @@ void Car::addNewCar(istream& ins) {
 
 
 }
+//metoda get.... ziska data z uz existujiciho objektu
 string Car::getBrand() const {
 	return brand;
 
@@ -74,7 +75,7 @@ int Car::getOwner() const {
 	return majitel;
 }
 
-//
+//nastavi data
 void Car::setBrand(const string& newCarBrand ) {
 	brand = newCarBrand;
 	
@@ -100,7 +101,7 @@ void	Car::setOwner(int newCarOwner) {
 void	setFuel(const string& newCarFuel);
 */
 
-
+//vypise jednotliva data
 void	Car::printCar() const{
 	cout << " Znacka: " << brand  << endl;
 	cout << " Model:  " << model  << endl;
@@ -110,16 +111,19 @@ void	Car::printCar() const{
 	cout << " Majitel:" << majitel<< endl;
 
 }
-//zapise udaje do souboru
+//zapise udaje do souboru v nastavenem formatu
 
 void	Car::printCarToFile(ofstream& out) {
-	out << brand << " " << model << endl;
-	out << spz << endl ;
+	out << brand << endl;
+	out << model << endl;
+	out << spz	<< endl ;
 	out << majitel << endl;
 	out << color << endl;
 	out << endl;
 }
 
+
+//destruktor
 Car::~Car() {
 
 }

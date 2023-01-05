@@ -7,7 +7,7 @@
 #include <iomanip>
 
 using namespace std;
-
+//odsud by se mìly naèíst data 
 const char AUTA_DATA[] = "auta_data.txt";
 
 void createCarList(ifstream& infile, CarDatabase& Database)
@@ -44,13 +44,13 @@ void createCarList(ifstream& infile, CarDatabase& Database)
 		infile >> spz;
 	}
 }
-
+//otevre soubor ziska z nej informace a ulozi je do pole, ktere si vytvori 
 void readCarData(CarDatabase& Database)
 {
 	ifstream infile;
 
 	infile.open(AUTA_DATA);
-
+	
 	if (!infile)
 	{
 		cerr << "Soubor neexistuje" << endl;

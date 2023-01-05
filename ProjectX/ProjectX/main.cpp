@@ -10,13 +10,15 @@ using namespace std;
 int main() {
 
 	CarDatabase Database;
-	//nacteni dat ze souboru => neimplementovano
+	//nacteni dat ze souboru => neimplementovano 
 	//readCarData(Database);
-	//Database.addCar;
+	
+
 	displayMenu();
 	
 	
 	processChoice(Database);
+	
 
 	cout << endl;
 
@@ -45,7 +47,7 @@ void processChoice(CarDatabase& database)
 	int intEdit, choice;
 	Car xxx;
 	ofstream out;
-	out.open("student_test.txt");
+	out.open("data_vystup.txt");
 
 	cout << "\nZvolte si: ";
 	cin >> choice;

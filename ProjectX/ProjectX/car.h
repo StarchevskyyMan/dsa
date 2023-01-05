@@ -1,5 +1,5 @@
-#ifndef CAR
-#define CAR
+#ifndef CAR_H
+#define CAR_H
 
 
 #include<iostream>
@@ -17,7 +17,7 @@ class Car
 public:
 	Car();
 	void setCar(const string& newCarModel, const string& newCarBrand, const string newCarSpz, const string newCarColor, const int newCarYear, const int newCarOwner);
-	
+	//pouzite metody
 	void	addNewCar(istream& ins);
 	string	getModel() const;
 	string	getBrand() const;
