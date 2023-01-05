@@ -115,7 +115,7 @@ void CarDatabase::printCarInfo() const
 		<< "  " << carPtr[i].getModel() << endl << "  " << carPtr[i].getColor() << endl
 		<< "  " << carPtr[i].getSpz() << endl << "  " << carPtr[i].getOwner() << endl << "==========" << endl;
 		
-		//zbyle udaje o autu
+		
 }
 
 void CarDatabase::saveToFile(ofstream& out)

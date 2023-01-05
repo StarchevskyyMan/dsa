@@ -10,9 +10,11 @@ using namespace std;
 int main() {
 
 	CarDatabase Database;
-
+	//nacteni dat ze souboru => neimplementovano
 	//readCarData(Database);
+	//Database.addCar;
 	displayMenu();
+	
 	
 	processChoice(Database);
 
